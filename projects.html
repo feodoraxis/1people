@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+    <title>Все проекты - projects.html</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="tagline" content="https://feodoraxis.ru/">
+    <meta name="author" content="Andrei Smorodin @feodoraxis">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="container-fluid">
+
+    <!-- Header -->
+    <header class="main__header main__header-page">
+    <div class="wrapper">
+        <div class="flexbox main__header-flexbox">
+            <div class="main__header-logo">
+                <div class="logo">
+                    <a href="/"></a>
+                </div>
+            </div>
+            <div class="main__header-menu">
+
+                <nav class="top__menu">
+                    <ul>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Наследие</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Открытки</a></li>
+                        <li><a href="#">Народная Лавка</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="main__header-hamburger">
+                <div class="hamburger">
+                    <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.11 6H0.99C0.0791999 6 0 6.6705 0 7.5C0 8.3295 0.0791999 9 0.99 9H22.11C23.0208 9 23.1 8.3295 23.1 7.5C23.1 6.6705 23.0208 6 22.11 6ZM22.11 12H0.99C0.0791999 12 0 12.6705 0 13.5C0 14.3295 0.0791999 15 0.99 15H22.11C23.0208 15 23.1 14.3295 23.1 13.5C23.1 12.6705 23.0208 12 22.11 12ZM0.99 3H22.11C23.0208 3 23.1 2.3295 23.1 1.5C23.1 0.6705 23.0208 0 22.11 0H0.99C0.0791999 0 0 0.6705 0 1.5C0 2.3295 0.0791999 3 0.99 3Z" fill="#FF2525"/>
+                    </svg> 
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile__menu">
+    <ul>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Наследие</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Открытки</a></li>
+        <li><a href="#">Народная Лавка</a></li>
+    </ul>
+</div>
+
+
+    <!-- Main container -->
+    <main class="page">
+
+       <!-- Content -->
+               <div class="breadcrumbs">
+            <div class="wrapper">
+                <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a itemprop="item" href="/">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <span itemprop="name">Все проекты</span>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
+            </div>
+        </div>
+               <section class="filter">
+            <div class="wrapper filter-wrapper">
+                <div class="flexbox filter-flexbox">
+
+                    <div class="filter-left">
+
+                        <div class="filter-categoryes">
+                            <div class="filter__categoryes">
+                                <p>Все категории</p>
+                            </div>
+                        </div>
+
+                        <div class="filter-country">
+                            <div class="filter__country">
+                                <input type="text" placeholder="Страна и регион">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="filter-right">
+
+                        <div class="filter-sort">
+                            <div class="filter__sort">
+                                <p>Сортировка</p>
+                            </div>
+                        </div>
+
+                        <div class="filter-search">
+                            <div class="filter__search">
+                                <input type="search">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="filter__categoryes-show active">
+                    <ul class="filter__categoryes-show-main">
+                        <li for="#society">
+                            <i class="icon icon-society"></i>
+                            <span>Общество</span>
+                        </li>
+                        <li for="#people">
+                            <i class="icon icon-people"></i>
+                            <span>Люди</span>
+                        </li>
+                        <li for="#kids">
+                            <i class="icon icon-kids"></i>
+                            <span>Дети</span>
+                        </li>
+                        <li for="#nature">
+                            <i class="icon icon-nature"></i>
+                            <span>Природа</span>
+                        </li>
+                        <li for="#creating">
+                            <i class="icon icon-creating"></i>
+                            <span>Творчество</span>
+                        </li>
+                        <li for="#culture">
+                            <i class="icon icon-culture"></i>
+                            <span>Культура</span>
+                        </li>
+                        <li for="#history">
+                            <i class="icon icon-history"></i>
+                            <span>История</span>
+                        </li>
+                        <li for="#study">
+                            <i class="icon icon-study"></i>
+                            <span>Просвещение</span>
+                        </li>
+                    </ul>
+
+                    <ul class="filter__categoryes-show-sub active" id="society">
+                        <li><a href="#">Лес</a></li>
+                        <li><a href="#">Экология</a></li>
+                        <li><a href="#">Экология</a></li>
+                        <li><a href="#">Природа</a></li>
+                        <li><a href="#">Браконьерство</a></li>
+                        <li><a href="#">Браконьерство</a></li>
+                        <li><a href="#">Экология</a></li>
+                        <li><a href="#">Лесеничество</a></li>
+                        <li><a href="#">Лесеничество</a></li>
+                        <li><a href="#">Животные</a></li>
+                        <li><a href="#">Заповедники</a></li>
+                        <li><a href="#">Заповедники</a></li>
+                        <li><a href="#">Лес</a></li>
+                        <li><a href="#">Приюты для животных</a></li>
+                        <li><a href="#">Приюты</a></li>
+                        <li><a href="#">Океан</a></li>
+                        <li><a href="#">Зоозащита</a></li>
+                        <li><a href="#">Зоозащита</a></li>
+                        <li><a href="#">Птицы</a></li>
+                        <li><a href="#">Лесоохрана</a></li>
+                        <li><a href="#">Лесоохрана</a></li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="people">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="kids">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="nature">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="creating">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="culture">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="history">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                    <ul class="filter__categoryes-show-sub" id="study">
+                        <li>Лес</li>
+                        <li>Экология</li>
+                        <li>Экология</li>
+                        <li>Природа</li>
+                        <li>Браконьерство</li>
+                        <li>Браконьерство</li>
+                        <li>Экология</li>
+                        <li>Лесеничество</li>
+                        <li>Лесеничество</li>
+                        <li>Животные</li>
+                        <li>Заповедники</li>
+                        <li>Заповедники</li>
+                        <li>Лес</li>
+                        <li>Приюты для животных</li>
+                        <li>Приюты</li>
+                        <li>Океан</li>
+                        <li>Зоозащита</li>
+                        <li>Зоозащита</li>
+                        <li>Птицы</li>
+                        <li>Лесоохрана</li>
+                        <li>Лесоохрана</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+
+        </section>
+
+
+    </main>
+	
+    <!-- Footer -->
+        <footer class="main__footer">
+        <div class="wrapper">
+            <div class="flexbox">
+
+                <div class="main__footer-first">
+                    <div class="main__footer-contacts">
+                        <div class="main__footer-contacts-title">
+                            <b>Контакты</b>
+                        </div>
+                        <ul>
+                            <li><a class="main__footer-contacts-email" href="#">1narodniy@gmail.com</a></li>
+                            <li><a class="main__footer-contacts-telegram" href="#">1narodniy</a></li>
+                            <li><a class="main__footer-contacts-recall" href="#">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main__footer-second">
+                    <!-- <div class="flexbox flexbox-justify-content-flex-end flexbox-flex-direction-column"> -->
+                        <div class="main__footer-sn">
+                            <ul class="sn">
+                                <li><a class="sn-youtube" href="#"></a></li>
+                                <li><a class="sn-telegram" href="#"></a></li>
+                                <li><a class="sn-instagram" href="#"></a></li>
+                                <li><a class="sn-ok" href="#"></a></li>
+                                <li><a class="sn-vk" href="#"></a></li>
+                                <li><a class="sn-facebook" href="#"></a></li>
+                            </ul>
+                        </div>
+                        <div class="main__footer-menu">
+                            <nav class="footer_menu">
+                                <ul>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Наследие</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Открытки</a></li>
+                                    <li><a href="#">Народная лавка</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+    Андрей Смородин — https://feodoraxis.ru
+
+    -->
+
+
+</body>
+</html>

@@ -63,10 +63,11 @@
 
 
     <!-- Main container -->
-    <main class="page">
+    <main class="page page-projects">
 
-       <!-- Content -->
-               <div class="breadcrumbs">
+        <!-- Content -->
+        <div class="page-breadcrumbs">
+                    <div class="breadcrumbs">
             <div class="wrapper">
                 <ol itemscope itemtype="http://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -82,7 +83,10 @@
                 </ol>
             </div>
         </div>
-               <section class="filter">
+        </div>
+
+        <div class="page-filter">
+                    <section class="filter">
             <div class="wrapper filter-wrapper">
                 <div class="flexbox filter-flexbox">
 
@@ -119,7 +123,9 @@
                     </div>
 
                 </div>
-                <div class="filter__categoryes-show active">
+                
+                <!-- add .active class -->
+                <div class="filter__categoryes-show">
                     <ul class="filter__categoryes-show-main">
                         <li for="#society">
                             <i class="icon icon-society"></i>
@@ -155,29 +161,32 @@
                         </li>
                     </ul>
 
-                    <ul class="filter__categoryes-show-sub active" id="society">
-                        <li><a href="#">Лес</a></li>
-                        <li><a href="#">Экология</a></li>
-                        <li><a href="#">Экология</a></li>
-                        <li><a href="#">Природа</a></li>
-                        <li><a href="#">Браконьерство</a></li>
-                        <li><a href="#">Браконьерство</a></li>
-                        <li><a href="#">Экология</a></li>
-                        <li><a href="#">Лесеничество</a></li>
-                        <li><a href="#">Лесеничество</a></li>
-                        <li><a href="#">Животные</a></li>
-                        <li><a href="#">Заповедники</a></li>
-                        <li><a href="#">Заповедники</a></li>
-                        <li><a href="#">Лес</a></li>
-                        <li><a href="#">Приюты для животных</a></li>
-                        <li><a href="#">Приюты</a></li>
-                        <li><a href="#">Океан</a></li>
-                        <li><a href="#">Зоозащита</a></li>
-                        <li><a href="#">Зоозащита</a></li>
-                        <li><a href="#">Птицы</a></li>
-                        <li><a href="#">Лесоохрана</a></li>
-                        <li><a href="#">Лесоохрана</a></li>
-                    </ul>
+                    <!-- add .active class -->
+                    <div class="filter__categoryes-show-sub" id="society">
+                        <ul>
+                            <li><a href="#"><span>Лес</span></a></li>
+                            <li><a href="#"><span>Экология</span></a></li>
+                            <li><a href="#"><span>Экология</span></a></li>
+                            <li><a href="#"><span>Природа</span></a></li>
+                            <li><a href="#"><span>Браконьерство</span></a></li>
+                            <li><a href="#"><span>Браконьерство</span></a></li>
+                            <li><a href="#"><span>Экология</span></a></li>
+                            <li><a href="#"><span>Лесеничество</span></a></li>
+                            <li><a href="#"><span>Лесеничество</a></li>
+                            <li><a href="#"><span>Животные</span></a></li>
+                            <li><a href="#"><span>Заповедники</span></a></li>
+                            <li><a href="#"><span>Заповедники</span></a></li>
+                            <li><a href="#"><span>Лес</span></a></li>
+                            <li><a href="#"><span>Приюты для животных</span></a></li>
+                            <li><a href="#"><span>Приюты</span></a></li>
+                            <li><a href="#"><span>Океан</span></a></li>
+                            <li><a href="#"><span>Зоозащита</span></a></li>
+                            <li><a href="#"><span>Зоозащита</span></a></li>
+                            <li><a href="#"><span>Птицы</span></a></li>
+                            <li><a href="#"><span>Лесоохрана</span></a></li>
+                            <li><a href="#"><span>Лесоохрана</span></a></li>
+                        </ul>
+                    </div>
                     <ul class="filter__categoryes-show-sub" id="people">
                         <li>Лес</li>
                         <li>Экология</li>
@@ -344,6 +353,443 @@
             
 
 
+        </section>
+        </div>
+
+        <div class="page-projects-list">
+            <div class="wrapper">
+                <div class="people__projects-list flexbox">
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Вятские лошади</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Восстановление лесов Сибири</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/2.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, Удмурдская республика</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Лед на реке - не помеха</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/3.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Вятские лошади</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Восстановление лесов Сибири</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/2.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, Удмурдская республика</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Лед на реке - не помеха</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/3.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Вятские лошади</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Восстановление лесов Сибири</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/2.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, Удмурдская республика</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Лед на реке - не помеха</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/3.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Вятские лошади</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/1.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Восстановление лесов Сибири</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/2.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, Удмурдская республика</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__projects-item">
+                        <div class="project__item">
+                            <div class="project__item-title">
+                                <a href="#">
+                                    <div class="item__title">
+                                        <h3>Лед на реке - не помеха</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project__item-thumbnail">
+                                <div class="item__thumbnail">
+                                    <img src="img/projects/3.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="project__item-description">
+                                <div class="item__description">
+                                    <p>Не больше нескольких предложений, чтобы передать основную суть проекта. Текст будет видно только на карточке проекта, поэтому важно, чтобы прочитав, человек сразу понимал о чём речь.</p>
+                                </div>
+                            </div>
+
+                            <div class="project__item-footer flexbox">
+                                <div class="project__item-footer-item">
+                                    <a href="#" class="btn btn-blue">Узнать о проекте</a>
+                                </div>
+                                <div class="project__item-footer-item">
+                                    <div class="location">
+                                        <p>Россия, <br>Санкт-Петербург и Ленинградская</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                <section class="pagination">
+            <div class="wrapper">
+                <div class="pagination-upload">
+                    <button class="btn btn-pagination">Показать ещё</button>
+                </div>
+
+                <div class="pagination-list">
+                    <ul>
+                        <li><a href="#"><span class="pagination-item pagination-item-arrow pagination-item-arrow-prev"></span></a></li>
+                        <li><span class="pagination-item pagination-item-current">1</span></li>
+                        <li><a href="#"><span class="pagination-item">2</span></a></li>
+                        <li><a href="#"><span class="pagination-item">3</span></a></li>
+                        <li><a href="#"><span class="pagination-item">...</span></a></li>
+                        <li><a href="#"><span class="pagination-item">8</span></a></li>
+                        <li><a href="#"><span class="pagination-item pagination-item-arrow pagination-item-arrow-next pagination-item-arrow-active"></span></a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
 

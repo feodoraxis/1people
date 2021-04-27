@@ -11,14 +11,20 @@
     <meta name="author" content="Andrei Smorodin @feodoraxis">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/all_libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 
 <body class="container-fluid">
 
     <!-- Header -->
-    <header class="main__header main__header-page">
+    <!-- 
+    For open menu here -- add to .main__header-page class .active
+    F.e.: class="main__header main__header-page active"
+-->
+<header class="main__header main__header-page">
     <div class="wrapper">
         <div class="flexbox main__header-flexbox">
             <div class="main__header-logo">
@@ -50,23 +56,13 @@
         </div>
     </div>
 </header>
-
-<div class="mobile__menu">
-    <ul>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Наследие</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Открытки</a></li>
-        <li><a href="#">Народная Лавка</a></li>
-    </ul>
-</div>
-
+<div class="main__header-page-fake"></div>
 
     <!-- Main container -->
     <main class="page">
 
         <!-- Content -->
-        <div class="page-breadcrumbs">
+        <div class="page-breadcrumbs page-breadcrumbs-desctop">
                     <div class="breadcrumbs">
             <div class="wrapper">
                 <ol itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -83,6 +79,10 @@
                 </ol>
             </div>
         </div>
+        </div>
+
+        <div class="page-breadcrumbs page-breadcrumbs-mobile">
+            <a href="#">< Назад</a>
         </div>
 
         <div class="single__project">
@@ -106,10 +106,31 @@
                                 <p>Красивая история о Вятских лошадях и Человеке, возродившем эту удивительную породу</p>
                             </div>
 
-                            <div class="single__project-location">
-                                <span>Межрегиональный проект</span>
-                                <span>Страны и регионы</span>
-                            </div>
+                            <span>
+                                <!-- 
+                                    Add class .active 
+                                    F.e.: class="single__project-location active"
+                                -->
+                                <span class="single__project-location">
+                                    <span class="single__project-location-select">Межрегиональный проект</span>
+                                    <span>Страны и регионы</span>
+
+                                    <!-- 
+                                        With opening list, for .single__project-location-list add 
+                                        width-style = (.single__project-location>span:nth-child(1).width + .single__project-location>span:nth-child(2).width) - 20px;
+                                    -->
+                                    <ul class="single__project-location-list">
+                                        <li>Межрегиональный проект</li>
+                                        <li>Межрегиональный проект</li>
+                                        <li>Межрегиональный проект</li>
+                                        <li>Межрегиональный проект</li>
+                                        <li>Межрегиональный проект</li>
+                                        <li>Межрегиональный проект</li>
+                                    </ul>
+                                </span>
+                            </span>
+
+                           
 
                             <div class="single__project-description">
                                 <p>Здесь будет текст о том, что делают в этом проекте... Текст краткого, но полного описания с основными ключевыми моментами.  Совсем небольшое, но с важными ключевыми моментами деятельности именно этого проекта. Конкретная информация о том, что делают и чем занимаются. Текст краткого, но полного описания с основными ключевыми моментами.</p>
@@ -141,22 +162,27 @@
                                 <div class="flexbox">
                                     <div class="gallery-extreme">
                                         <div class="gallery-picture">
+                                            <span>some text</span>
                                             <img src="img/gallery/extreme.jpg" alt="">
                                         </div>
                                         <div class="gallery-picture">
+                                            <span>some text</span>
                                             <img src="img/gallery/extreme.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="gallery-center">
                                         <div class="gallery-picture">
+                                            <span>some text</span>
                                             <img src="img/gallery/center.jpg" alt="">
                                         </div>
                                     </div>
                                     <div class="gallery-extreme">
                                         <div class="gallery-picture">
+                                            <span>some text</span>
                                             <img src="img/gallery/extreme.jpg" alt="">
                                         </div>
                                         <div class="gallery-picture">
+                                            <span>some text</span>
                                             <img src="img/gallery/extreme.jpg" alt="">
                                         </div>
                                     </div>

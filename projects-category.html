@@ -61,378 +61,358 @@
 
         <!-- Content -->
         <div class="page-breadcrumbs">
-                    <div class="breadcrumbs">
-            <div class="wrapper">
-                <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemprop="item" href="/">
-                            <span itemprop="name">Главная</span>
-                        </a>
-                        <meta itemprop="position" content="1" />
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <span itemprop="name">Все проекты</span>
-                        <meta itemprop="position" content="2" />
-                    </li>
-                </ol>
+            <div class="breadcrumbs">
+                <div class="wrapper">
+                    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="/">
+                                <span itemprop="name">Главная</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="projects.html">
+                                <span itemprop="name">Все проекты</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <span itemprop="name">Природа</span>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
+                </div>
             </div>
-        </div>
         </div>
 
         <div class="page-filter">
-                    <section class="filter">
-            <div class="wrapper filter-wrapper">
-                <div class="flexbox filter-flexbox filter-desctop">
-
-                    <div class="filter-left">
-
-                        <div class="filter-categoryes">
-                            <!-- when user selected some item, need ass class .filter__categoryes-selected, for paint text to red color, and show remove-button. F.e.  class="filter__categoryes filter__categoryes-red" -->
-                            <div class="filter__categoryes">
-                                <p>Все категории</p>
-                                <span class="remove"></span>
+            <section class="filter">
+                <div class="wrapper filter-wrapper">
+                    <div class="flexbox filter-flexbox filter-desctop">
+    
+                        <div class="filter-left">
+    
+                            <div class="filter-categoryes">
+                                <!-- when user selected some item, need ass class .filter__categoryes-selected, for paint text to red color, and show remove-button. F.e.  class="filter__categoryes filter__categoryes-red" -->
+                                <div class="filter__categoryes">
+                                    <p>Все категории</p>
+                                    <span class="remove"></span>
+                                </div>
                             </div>
+    
                         </div>
-
-                        <div class="filter-country">
-                            <!-- on focus add class .active for rotate arrow (f.e. class="filter__country active") -->
-
-                            <!-- when sceen size less than 767px, for full width input on focus need add fixed style "width" -->
-
-                            <!-- when user selected some item, need ass class .filter__country-selected, for paint text to red color, and show remove-button. F.e. class="filter__country filter__country-red" -->
-                            <!-- when need make blue arrow (and rotate it), text and border -- class="filter__country filter__country-blue" -->
-                            <div class="filter__country">
-                                <input type="text" placeholder="Страна и регион">
-                                <span class="remove"></span>
+    
+                        <div class="filter-right">
+    
+                            <div class="filter-sort">
+    
+                                <!-- on focus add class .active for rotate arrow (f.e. class="filter__sort active") -->
+                                <div class="filter__sort">
+                                    <p>Сортировка</p>
+                                </div>
                             </div>
+    
+                            <div class="filter-search">
+                                <!-- when need to make icon red color - add to .filter__search class .inputed -->
+                                <div class="filter__search">
+                                    <input type="search">
+                                </div>
+                            </div>
+    
                         </div>
-
+    
                     </div>
-
-                    <div class="filter-right">
-
-                        <div class="filter-sort">
-
-                            <!-- on focus add class .active for rotate arrow (f.e. class="filter__sort active") -->
-                            <div class="filter__sort">
-                                <p>Сортировка</p>
+    
+                    <div class="flexbox filter-flexbox filter-mobile">
+    
+                        <div class="filter-left">
+    
+                            <div class="filter-categoryes">
+                                <div class="filter__categoryes">
+                                    <p>Все категории</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="filter-search">
-                            <!-- when need to make icon red color - add to .filter__search class .inputed -->
-                            <div class="filter__search">
-                                <input type="search">
+    
+                            <div class="filter-sort">
+                                <div class="filter__sort">
+                                    <p>Сортировка</p>
+                                </div>
                             </div>
+    
                         </div>
+    
+                        <div class="filter-right">
 
+                            <!-- screen < w767 -- add to .filter-search class .filter-search and add to .filter__search class .active -->
+                            <div class="filter-search">
+                                <div class="filter__search">
+                                    <input type="search">
+                                </div>
+                            </div>
+    
+                            
+    
+                        </div>
+    
                     </div>
-
-                </div>
-
-                <div class="flexbox filter-flexbox filter-mobile">
-
-                    <div class="filter-left">
-
-                        <div class="filter-categoryes">
-                            <div class="filter__categoryes">
-                                <p>Все категории</p>
-                            </div>
-                        </div>
-
-                        <!-- screen < w767 -- add to .filter-search class .filter-search and add to .filter__search class .active -->
-                        <div class="filter-search">
-                            <div class="filter__search">
-                                <input type="search">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="filter-right">
-                        <div class="filter-country">
-                            <div class="filter__country">
-                                <input type="text" placeholder="Страна и регион">
-                            </div>
-                        </div>
-
-                        <div class="filter-sort">
-                            <div class="filter__sort">
-                                <p>Сортировка</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                
-                <!-- add .active class -->
-                <div class="filter__categoryes-show">
-                    <ul class="filter__categoryes-show-main">
-                        <li class="filter__categoryes-show-society" for="#society">
-                            <span>Общество</span>
-                        </li>
-                        <li class="filter__categoryes-show-people" for="#people">
-                            <span>Люди</span>
-                        </li>
-                        <li class="filter__categoryes-show-kids" for="#kids">
-                            <span>Дети</span>
-                        </li>
-                        <li class="filter__categoryes-show-nature" for="#nature">
-                            <span>Природа</span>
-                        </li>
-                        <li class="filter__categoryes-show-creating" for="#creating">
-                            <span>Творчество</span>
-                        </li>
-                        <li class="filter__categoryes-show-culture" for="#culture">
-                            <span>Культура</span>
-                        </li>
-                        <li class="filter__categoryes-show-history" for="#history">
-                            <span>История</span>
-                        </li>
-                        <li class="filter__categoryes-show-education" for="#education">
-                            <span>Просвещение</span>
-                        </li>
-                    </ul>
-
+                    
                     <!-- add .active class -->
-                    <div class="filter__categoryes-show-sub" id="society">
-
-                        <a class="filter__categoryes-show-sub-back" href="#">< <span>Назад</span></a>
-                        <ul>
-                            <li>
-                                <span><a href="#">Лес</a></span>
-                                <span><a href="#">Природа</a></span>
-                                <span><a href="#">Экология</a></span>
-                                <span><a href="#">Животные</a></span>
-                                <span><a href="#">Лес</a></span>
-                                <span><a href="#">Океан</a></span>
-                                <span><a href="#">Птицы</a></span>
+                    <div class="filter__categoryes-show">
+                        <ul class="filter__categoryes-show-main">
+                            <li class="filter__categoryes-show-society" for="#society">
+                                <span>Общество</span>
                             </li>
-                            <li>
-                                <span><a href="#">Экология</a></span>
-                                <span><a href="#">Браконьерство</a></span>
-                                <span><a href="#">Лесеничество</a></span>
-                                <span><a href="#">Заповедники</a></span>
-                                <span><a href="#">Приюты для животных</a></span>
-                                <span><a href="#">Зоозащита</a></span>
-                                <span><a href="#">Лесоохрана</a></span>
+                            <li class="filter__categoryes-show-people" for="#people">
+                                <span>Люди</span>
                             </li>
-                            <li>
-                                <span><a href="#">Экология</a></span>
-                                <span><a href="#">Браконьерство</a></span>
-                                <span><a href="#">Лесеничество</a></span>
-                                <span><a href="#">Заповедники</a></span>
-                                <span><a href="#">Приюты</a></span>
-                                <span><a href="#">Зоозащита</a></span>
-                                <span><a href="#">Лесоохрана</a></span>
+                            <li class="filter__categoryes-show-kids" for="#kids">
+                                <span>Дети</span>
+                            </li>
+                            <li class="filter__categoryes-show-nature" for="#nature">
+                                <span>Природа</span>
+                            </li>
+                            <li class="filter__categoryes-show-creating" for="#creating">
+                                <span>Творчество</span>
+                            </li>
+                            <li class="filter__categoryes-show-culture" for="#culture">
+                                <span>Культура</span>
+                            </li>
+                            <li class="filter__categoryes-show-history" for="#history">
+                                <span>История</span>
+                            </li>
+                            <li class="filter__categoryes-show-education" for="#education">
+                                <span>Просвещение</span>
                             </li>
                         </ul>
-
-                        <button class="filter__categoryes-show-sub-button"></button>
+    
+                        <!-- add .active class -->
+                        <div class="filter__categoryes-show-sub" id="society">
+    
+                            <a class="filter__categoryes-show-sub-back" href="#">< <span>Назад</span></a>
+                            <ul>
+                                <li>
+                                    <span><a href="#">Лес</a></span>
+                                    <span><a href="#">Природа</a></span>
+                                    <span><a href="#">Экология</a></span>
+                                    <span><a href="#">Животные</a></span>
+                                    <span><a href="#">Лес</a></span>
+                                    <span><a href="#">Океан</a></span>
+                                    <span><a href="#">Птицы</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="#">Экология</a></span>
+                                    <span><a href="#">Браконьерство</a></span>
+                                    <span><a href="#">Лесеничество</a></span>
+                                    <span><a href="#">Заповедники</a></span>
+                                    <span><a href="#">Приюты для животных</a></span>
+                                    <span><a href="#">Зоозащита</a></span>
+                                    <span><a href="#">Лесоохрана</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="#">Экология</a></span>
+                                    <span><a href="#">Браконьерство</a></span>
+                                    <span><a href="#">Лесеничество</a></span>
+                                    <span><a href="#">Заповедники</a></span>
+                                    <span><a href="#">Приюты</a></span>
+                                    <span><a href="#">Зоозащита</a></span>
+                                    <span><a href="#">Лесоохрана</a></span>
+                                </li>
+                            </ul>
+    
+                            <button class="filter__categoryes-show-sub-button"></button>
+                        </div>
+                        <ul class="filter__categoryes-show-sub" id="people">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="kids">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="nature">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="creating">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="culture">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="history">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
+                        <ul class="filter__categoryes-show-sub" id="education">
+                            <li>Лес</li>
+                            <li>Экология</li>
+                            <li>Экология</li>
+                            <li>Природа</li>
+                            <li>Браконьерство</li>
+                            <li>Браконьерство</li>
+                            <li>Экология</li>
+                            <li>Лесеничество</li>
+                            <li>Лесеничество</li>
+                            <li>Животные</li>
+                            <li>Заповедники</li>
+                            <li>Заповедники</li>
+                            <li>Лес</li>
+                            <li>Приюты для животных</li>
+                            <li>Приюты</li>
+                            <li>Океан</li>
+                            <li>Зоозащита</li>
+                            <li>Зоозащита</li>
+                            <li>Птицы</li>
+                            <li>Лесоохрана</li>
+                            <li>Лесоохрана</li>
+                        </ul>
                     </div>
-                    <ul class="filter__categoryes-show-sub" id="people">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="kids">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="nature">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="creating">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="culture">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="history">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
-                    <ul class="filter__categoryes-show-sub" id="education">
-                        <li>Лес</li>
-                        <li>Экология</li>
-                        <li>Экология</li>
-                        <li>Природа</li>
-                        <li>Браконьерство</li>
-                        <li>Браконьерство</li>
-                        <li>Экология</li>
-                        <li>Лесеничество</li>
-                        <li>Лесеничество</li>
-                        <li>Животные</li>
-                        <li>Заповедники</li>
-                        <li>Заповедники</li>
-                        <li>Лес</li>
-                        <li>Приюты для животных</li>
-                        <li>Приюты</li>
-                        <li>Океан</li>
-                        <li>Зоозащита</li>
-                        <li>Зоозащита</li>
-                        <li>Птицы</li>
-                        <li>Лесоохрана</li>
-                        <li>Лесоохрана</li>
-                    </ul>
+    
+                    <!-- add .active class -->
+                    <!-- on scrren size less than 768px, set width-style from .filter__sort to .filter__sort-show -->
+                    <div class="filter__sort-show">
+                        <ul>
+                            <li>
+                                <div class="filter__sort-radio">
+                                    <input type="radio" id="radio_1" name="fs" value="1" checked>
+                                    <label for="radio_1">Случайные</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__sort-radio">
+                                    <input type="radio" id="radio_2" name="fs" value="2">
+                                    <label for="radio_2">Новые</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__sort-radio">
+                                    <input type="radio" id="radio_3" name="fs" value="3">
+                                    <label for="radio_3">Популярные</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- add .active class -->
-                <div class="filter__country-show">
-                    <ul>
-                        <li>Межрегиональные проекты</li>
-                        <li>Общероссийские проекты</li>
-                        <li>Международные проекты</li>
-                        <li>Россия, Омская область</li>
-                    </ul>
-                </div>
-
-                <!-- add .active class -->
-                <!-- on scrren size less than 768px, set width-style from .filter__sort to .filter__sort-show -->
-                <div class="filter__sort-show">
-                    <ul>
-                        <li>
-                            <div class="filter__sort-radio">
-                                <input type="radio" id="radio_1" name="fs" value="1" checked>
-                                <label for="radio_1">Случайные</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="filter__sort-radio">
-                                <input type="radio" id="radio_2" name="fs" value="2">
-                                <label for="radio_2">Новые</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="filter__sort-radio">
-                                <input type="radio" id="radio_3" name="fs" value="3">
-                                <label for="radio_3">Популярные</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-
-
-        </section>
+                
+    
+    
+            </section>
         </div>
 
         <!-- <div class="page-search_result">

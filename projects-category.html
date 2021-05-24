@@ -11,7 +11,9 @@
     <meta name="author" content="Andrei Smorodin @feodoraxis">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/all_libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 
@@ -100,6 +102,19 @@
                                 </div>
                             </div>
     
+                            <div class="filter-country">
+                                <!-- on focus add class .active for rotate arrow (f.e. class="filter__country active") -->
+    
+                                <!-- when sceen size less than 767px, for full width input on focus need add fixed style "width" -->
+    
+                                <!-- when user selected some item, need ass class .filter__country-selected, for paint text to red color, and show remove-button. F.e. class="filter__country filter__country-red" -->
+                                <!-- when need make blue arrow (and rotate it), text and border -- class="filter__country filter__country-blue" -->
+                                <div class="filter__country">
+                                    <input type="text" placeholder="Страна и регион">
+                                    <span class="remove"></span>
+                                </div>
+                            </div>
+    
                         </div>
     
                         <div class="filter-right">
@@ -133,6 +148,22 @@
                                 </div>
                             </div>
     
+                            <!-- screen < w767 -- add to .filter-search class .filter-search and add to .filter__search class .active -->
+                            <div class="filter-search">
+                                <div class="filter__search">
+                                    <input type="search">
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="filter-right">
+                            <div class="filter-country">
+                                <div class="filter__country">
+                                    <input type="text" placeholder="Страна и регион">
+                                </div>
+                            </div>
+    
                             <div class="filter-sort">
                                 <div class="filter__sort">
                                     <p>Сортировка</p>
@@ -141,52 +172,13 @@
     
                         </div>
     
-                        <div class="filter-right">
-
-                            <!-- screen < w767 -- add to .filter-search class .filter-search and add to .filter__search class .active -->
-                            <div class="filter-search">
-                                <div class="filter__search">
-                                    <input type="search">
-                                </div>
-                            </div>
-    
-                            
-    
-                        </div>
-    
                     </div>
                     
                     <!-- add .active class -->
-                    <div class="filter__categoryes-show">
-                        <ul class="filter__categoryes-show-main">
-                            <li class="filter__categoryes-show-society" for="#society">
-                                <span>Общество</span>
-                            </li>
-                            <li class="filter__categoryes-show-people" for="#people">
-                                <span>Люди</span>
-                            </li>
-                            <li class="filter__categoryes-show-kids" for="#kids">
-                                <span>Дети</span>
-                            </li>
-                            <li class="filter__categoryes-show-nature" for="#nature">
-                                <span>Природа</span>
-                            </li>
-                            <li class="filter__categoryes-show-creating" for="#creating">
-                                <span>Творчество</span>
-                            </li>
-                            <li class="filter__categoryes-show-culture" for="#culture">
-                                <span>Культура</span>
-                            </li>
-                            <li class="filter__categoryes-show-history" for="#history">
-                                <span>История</span>
-                            </li>
-                            <li class="filter__categoryes-show-education" for="#education">
-                                <span>Просвещение</span>
-                            </li>
-                        </ul>
-    
+                    <div class="filter__categoryes-show active">
+
                         <!-- add .active class -->
-                        <div class="filter__categoryes-show-sub" id="society">
+                        <div class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="society">
     
                             <a class="filter__categoryes-show-sub-back" href="#">< <span>Назад</span></a>
                             <ul>
@@ -221,7 +213,7 @@
     
                             <button class="filter__categoryes-show-sub-button"></button>
                         </div>
-                        <ul class="filter__categoryes-show-sub" id="people">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="people">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -244,7 +236,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="kids">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="kids">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -267,7 +259,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="nature">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="nature">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -290,7 +282,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="creating">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="creating">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -313,7 +305,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="culture">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="culture">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -336,7 +328,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="history">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="history">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -359,7 +351,7 @@
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
                         </ul>
-                        <ul class="filter__categoryes-show-sub" id="education">
+                        <ul class="filter__categoryes-show-sub filter__categoryes-show-sub-category" id="education">
                             <li>Лес</li>
                             <li>Экология</li>
                             <li>Экология</li>
@@ -381,6 +373,16 @@
                             <li>Птицы</li>
                             <li>Лесоохрана</li>
                             <li>Лесоохрана</li>
+                        </ul>
+                    </div>
+    
+                    <!-- add .active class -->
+                    <div class="filter__country-show">
+                        <ul>
+                            <li>Межрегиональные проекты</li>
+                            <li>Общероссийские проекты</li>
+                            <li>Международные проекты</li>
+                            <li>Россия, Омская область</li>
                         </ul>
                     </div>
     

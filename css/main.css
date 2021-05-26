@@ -670,6 +670,8 @@ input {
 
 .pagination-list {
     width: 100%; }
+    .pagination-list-windows .pagination-item-num {
+        padding-top: 3px; }
     .pagination-list ul {
         display: -webkit-box;
         display: -webkit-flex;
@@ -689,6 +691,7 @@ input {
 
 .pagination-item {
     min-width: 17px;
+    height: 100%;
     min-height: 20px;
     color: rgba(18, 20, 49, 0.68);
     font-size: 21px;
@@ -714,9 +717,7 @@ input {
         -webkit-background-size: contain;
                 background-size: contain;
         background-image: url(../img/icons/arrow-right.svg);
-        opacity: .33;
-        min-height: 19px;
-        height: 19px; }
+        opacity: .33; }
         .pagination-item-arrow-prev {
             -webkit-transform: rotate(180deg);
                 -ms-transform: rotate(180deg);
@@ -1778,13 +1779,14 @@ input {
         -webkit-border-radius: 3px 3px 8px 8px;
                 border-radius: 3px 3px 8px 8px;
         width: 326px;
-        height: 123px;
+        max-height: 207px;
         position: absolute;
         z-index: 100;
         padding: 0;
         left: 279px;
         top: 50px;
-        border: 0.3px solid #1D198C; }
+        border: 0.3px solid #1D198C;
+        overflow-y: auto; }
         .filter__country-show.active {
             display: block; }
         .filter__country-show ul {
@@ -1803,9 +1805,10 @@ input {
                 color: #121431;
                 margin-top: -1px;
                 cursor: pointer; }
-                .filter__country-show ul li:hover {
-                    border-color: #FF2525;
+                .filter__country-show ul li.active {
                     color: #1D198C; }
+                .filter__country-show ul li.first {
+                    border-top: 0.5px solid #FF2525; }
                 .filter__country-show ul li:first-child {
                     border-top: 0;
                     margin-top: 0; }
@@ -1847,6 +1850,8 @@ input {
         border-color: #1D198C; }
         .filter__search.inputed::before {
             background-image: url(../img/icons/search-icon-red.svg); }
+        .filter__search.inputed input {
+            border-color: #1D198C; }
     .filter__search::before {
         content: '';
         display: block;

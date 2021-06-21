@@ -549,22 +549,26 @@ input {
             background-size: cover;
     position: relative;
     margin-bottom: 30px; }
-    .matrix::after {
-        content: '';
+    .matrix-button {
         display: block;
         position: absolute;
-        background-image: url(../img/to_bottom.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        -webkit-background-size: contain;
-                background-size: contain;
-        width: 44px;
-        height: 44px;
         left: 0;
         right: 0;
         bottom: 40px;
         margin: auto;
         z-index: 10; }
+        .matrix-button button {
+            background-image: url(../img/to_bottom.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-background-size: contain;
+                    background-size: contain;
+            width: 44px;
+            height: 44px;
+            background-color: transparent;
+            border: 0;
+            margin: auto;
+            display: block; }
     .matrix-wrapper {
         max-width: 583px;
         width: 100%;
@@ -916,6 +920,11 @@ input {
                 -ms-transform: rotate(90deg);
                     transform: rotate(90deg);
             margin: auto; }
+        .single__project-location-select.active::after {
+            -webkit-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                    transform: rotate(270deg);
+            opacity: .5; }
         .single__project-location-select:hover {
             text-decoration: none !important; }
     .single__project-location span {
@@ -956,20 +965,38 @@ input {
         padding: 36px 6px 6px 6px;
         -webkit-border-radius: 3px 3px 8px 8px;
                 border-radius: 3px 3px 8px 8px;
-        border: 1px solid #FF2525;
         position: absolute;
         top: -3px;
         margin-left: 20px;
         z-index: 10;
-            z-index-display: block; }
+        -webkit-box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12);
+                box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12); }
+        .single__project-location-list::after {
+            content: '';
+            display: block;
+            position: absolute;
+            -webkit-border-radius: 3px 3px 8px 8px;
+                    border-radius: 3px 3px 8px 8px;
+            border: 1px solid #FF2525;
+            width: -webkit-calc(100% - 4px);
+            width: calc(100% - 4px);
+            height: -webkit-calc(100% - 4px);
+            height: calc(100% - 4px);
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none; }
         .single__project-location-list::before {
             content: '';
             display: block;
             position: absolute;
-            width: 100%;
+            width: -webkit-calc(100% - 4px);
+            width: calc(100% - 4px);
             top: 31px;
             border-bottom: 1px solid #FF2525;
-            left: 0; }
+            left: 2px; }
         .single__project-location-list li {
             color: #1D198C;
             line-height: 24px;

@@ -997,7 +997,7 @@ input {
             top: 31px;
             border-bottom: 1px solid #FF2525;
             left: 2px; }
-        .single__project-location-list li {
+        .single__project-location-list li, .single__project-location-list a {
             color: #1D198C;
             line-height: 24px;
             font-size: 13px;
@@ -1005,7 +1005,7 @@ input {
             letter-spacing: 0.1px;
             margin-bottom: 2px;
             cursor: pointer; }
-            .single__project-location-list li:hover {
+            .single__project-location-list li:hover, .single__project-location-list a:hover {
                 color: #FF2525; }
     .single__project-location.active .single__project-location-list {
         display: block; }
@@ -1172,6 +1172,30 @@ input {
             .support-table-name p {
                 margin-bottom: 0;
                 line-height: 24px; }
+            .support-table-name-two p {
+                color: rgba(0, 0, 0, 0.33);
+                margin-left: 4px;
+                position: relative;
+                display: inline-block;
+                cursor: pointer; }
+                .support-table-name-two p::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+                    left: 0;
+                    width: -webkit-calc(100% + 5px);
+                    width: calc(100% + 5px);
+                    bottom: -1px; }
+                .support-table-name-two p:first-child {
+                    margin-top: 12px; }
+                .support-table-name-two p:last-child {
+                    margin-top: 0px; }
+                .support-table-name-two p.active, .support-table-name-two p:hover {
+                    color: #1D198C; }
+                    .support-table-name-two p.active::before, .support-table-name-two p:hover::before {
+                        border-color: #FF2525;
+                        bottom: -3px; }
         .support-table-val {
             -webkit-box-flex: 0;
             -webkit-flex: 0 0 69%;
@@ -1554,35 +1578,35 @@ input {
             position: relative; }
         .filter__categoryes-show-society::before {
             background-image: url(../img/icons_direction/society.svg); }
-        .filter__categoryes-show-society:hover::before {
+        .filter__categoryes-show-society:hover::before, .filter__categoryes-show-society.active::before {
             background-image: url(../img/icons_direction/society_hover.svg); }
         .filter__categoryes-show-people::before {
             background-image: url(../img/icons_direction/people.svg); }
-        .filter__categoryes-show-people:hover::before {
+        .filter__categoryes-show-people:hover::before, .filter__categoryes-show-people.active::before {
             background-image: url(../img/icons_direction/people_hover.svg); }
         .filter__categoryes-show-kids::before {
             background-image: url(../img/icons_direction/kids.svg); }
-        .filter__categoryes-show-kids:hover::before {
+        .filter__categoryes-show-kids:hover::before, .filter__categoryes-show-kids.active::before {
             background-image: url(../img/icons_direction/kids_hover.svg); }
         .filter__categoryes-show-nature::before {
             background-image: url(../img/icons_direction/nature.svg); }
-        .filter__categoryes-show-nature:hover::before {
+        .filter__categoryes-show-nature:hover::before, .filter__categoryes-show-nature.active::before {
             background-image: url(../img/icons_direction/nature_hover.svg); }
         .filter__categoryes-show-creating::before {
             background-image: url(../img/icons_direction/creating.svg); }
-        .filter__categoryes-show-creating:hover::before {
+        .filter__categoryes-show-creating:hover::before, .filter__categoryes-show-creating.active::before {
             background-image: url(../img/icons_direction/creating_hover.svg); }
         .filter__categoryes-show-culture::before {
             background-image: url(../img/icons_direction/culture.svg); }
-        .filter__categoryes-show-culture:hover::before {
+        .filter__categoryes-show-culture:hover::before, .filter__categoryes-show-culture.active::before {
             background-image: url(../img/icons_direction/culture_hover.svg); }
         .filter__categoryes-show-history::before {
             background-image: url(../img/icons_direction/history.svg); }
-        .filter__categoryes-show-history:hover::before {
+        .filter__categoryes-show-history:hover::before, .filter__categoryes-show-history.active::before {
             background-image: url(../img/icons_direction/history_hover.svg); }
         .filter__categoryes-show-education::before {
             background-image: url(../img/icons_direction/education.svg); }
-        .filter__categoryes-show-education:hover::before {
+        .filter__categoryes-show-education:hover::before, .filter__categoryes-show-education.active::before {
             background-image: url(../img/icons_direction/education_hover.svg); }
         .filter__categoryes-show.active {
             display: block; }
@@ -1616,6 +1640,8 @@ input {
                     border-color: rgba(18, 20, 49, 0.12); }
                     .filter__categoryes-show-main > li:hover span {
                         color: #FF2525; }
+                .filter__categoryes-show-main > li.active span {
+                    color: #FF2525; }
             .filter__categoryes-show-main span {
                 font-size: 18px;
                 line-height: 39px;
@@ -2269,6 +2295,8 @@ input[type="email"] {
             background-size: cover;
     height: 90px;
     background-position-y: 3px; }
+    .matrix__item:hover {
+        background-position-y: 2px; }
     .matrix__item-all_projects {
         background-image: url(../img/nmatrix/all_projects.png); }
         .matrix__item-all_projects:hover {

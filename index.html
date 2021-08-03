@@ -316,7 +316,10 @@
                                 </div>
                                 <div class="support-table support-table-price support-table-align-center">
                                     <div class="support-table-name">
-                                        <p>Помочь ежемесячно:</p>
+                                        <div class="support-table-name-two">
+                                            <p class="active">Помочь ежемесячно:</p>
+                                            <p>Помочь единоразово:</p>
+                                        </div>
                                     </div>
                                     <div class="support-table-val">
                                         
@@ -541,6 +544,36 @@
 
     -->
 
+
+    <script>
+        // Предзагрузка картинок матрицы, чтобы та не мигала при первом наведении
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = new Array();
+
+            function preloadImages(...images) {
+                images.forEach((image, i) => {
+                    image = new Image();
+                    image.src = preloadImages.arguments[i];
+                });
+            };
+
+            preloadImages(
+                '/img/nmatrix/all_projects-hover.png',
+                '/img/nmatrix/participation-hover.png',
+                '/img/nmatrix/comm-hover.png',
+                '/img/nmatrix/people-hover.png',
+                '/img/nmatrix/humans-hover.png',
+                '/img/nmatrix/kids-hover.png',
+                '/img/nmatrix/education-hover.png',
+                '/img/nmatrix/channel-hover.png',
+                '/img/nmatrix/nature-hover.png',
+                '/img/nmatrix/history-hover.png',
+                '/img/nmatrix/culture-hover.png',
+                '/img/nmatrix/creation-hover.png'
+            );
+        });
+
+    </script>
 
 </body>
 </html>

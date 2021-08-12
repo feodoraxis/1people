@@ -718,11 +718,23 @@
         .filter__categoryes-show-sub-category button {
             display: none; } }
 
+@media only screen and (max-width: 855px) {
+    .filter__categoryes-show-sub {
+        right: auto;
+        left: 108px; } }
+
 @media only screen and (max-width: 840px) {
     .filter__categoryes-show-sub {
-        width: -webkit-calc( 100% - 253px - 89px);
-        width: calc( 100% - 253px - 89px);
-        right: 64px; }
+        max-width: 529px;
+        min-width: 456px;
+        left: auto;
+        right: 39px; }
+        .filter__categoryes-show-sub li {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 50%;
+                -ms-flex: 0 0 50%;
+                    flex: 0 0 50%;
+            max-width: 50%; }
         .filter__categoryes-show-sub-button {
             bottom: 18px;
             right: 15px; }
@@ -754,6 +766,16 @@
     .filter__categoryes-show-main {
         left: 16px;
         top: 7px; } }
+
+@media only screen and (max-width: 768px) {
+    .filter__categoryes-show-sub {
+        max-width: 529px;
+        min-width: 456px;
+        left: 16px;
+        top: 14px;
+        width: 100%; }
+        .filter__categoryes-show-sub-category {
+            width: 100%; } }
 
 @media only screen and (max-width: 440px) {
     .filter__categoryes-show-main {

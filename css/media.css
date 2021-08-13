@@ -721,7 +721,10 @@
 @media only screen and (max-width: 855px) {
     .filter__categoryes-show-sub {
         right: auto;
-        left: 108px; } }
+        left: 108px; }
+        .filter__categoryes-show-sub-category {
+            left: 30px;
+            right: auto; } }
 
 @media only screen and (max-width: 840px) {
     .filter__categoryes-show-sub {
@@ -771,11 +774,50 @@
     .filter__categoryes-show-sub {
         max-width: 529px;
         min-width: 456px;
-        left: 16px;
-        top: 14px;
+        top: 7px;
         width: 100%; }
         .filter__categoryes-show-sub-category {
-            width: 100%; } }
+            left: 16px;
+            right: auto; } }
+
+@media only screen and (max-width: 640px) {
+    .filter__categoryes-show-sub {
+        left: 83px;
+        width: auto; }
+        .filter__categoryes-show-sub-category {
+            left: 16px;
+            right: auto; } }
+
+@media only screen and (max-width: 559px) {
+    .filter__categoryes-show-sub {
+        left: auto;
+        max-width: 280px;
+        min-width: 214px; }
+        .filter__categoryes-show-sub li {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 100%;
+                -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+            max-width: 100%; }
+        .filter__categoryes-show-sub-back {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            font-size: 14px;
+            font-family: "Vera Humana 95", sans-serif;
+            color: #1D198C;
+            letter-spacing: 0.1px;
+            z-index: 10; }
+            .filter__categoryes-show-sub-back span {
+                text-decoration: underline; }
+            .filter__categoryes-show-sub-back:hover {
+                color: #1D198C; }
+                .filter__categoryes-show-sub-back:hover span {
+                    text-decoration: none; }
+        .filter__categoryes-show-sub-category {
+            left: 16px;
+            right: auto; } }
 
 @media only screen and (max-width: 440px) {
     .filter__categoryes-show-main {
@@ -784,13 +826,14 @@
         width: -webkit-calc( 100% - 130px);
         width: calc( 100% - 130px);
         right: 18px;
-        padding: 45px 33px 20px;
+        padding: 39px 18px 20px;
         overflow-y: scroll; }
         .filter__categoryes-show-sub-category {
             left: 16px;
             width: -webkit-calc(100% - 32px);
             width: calc(100% - 32px);
-            max-width: 100%; }
+            max-width: 100%;
+            padding: 39px 18px 20px; }
             .filter__categoryes-show-sub-category button {
                 display: none; }
         .filter__categoryes-show-sub ul {
@@ -808,31 +851,21 @@
             .filter__categoryes-show-sub li:nth-child(1), .filter__categoryes-show-sub li:nth-child(2) {
                 padding-right: 0; }
         .filter__categoryes-show-sub-button {
-            display: none; }
-        .filter__categoryes-show-sub-back {
-            display: block;
-            position: absolute;
-            left: 20px;
-            top: 15px;
-            font-size: 14px;
-            font-family: "Vera Humana 95", sans-serif;
-            color: #1D198C;
-            letter-spacing: 0.1px;
-            z-index: 10; }
-            .filter__categoryes-show-sub-back span {
-                text-decoration: underline; }
-            .filter__categoryes-show-sub-back:hover {
-                color: #1D198C; }
-                .filter__categoryes-show-sub-back:hover span {
-                    text-decoration: none; } }
+            display: none; } }
 
 @media only screen and (max-width: 400px) {
     .filter__categoryes-show-sub {
         width: -webkit-calc( 100% - 108px);
         width: calc( 100% - 108px); }
         .filter__categoryes-show-sub-category {
-            width: -webkit-calc(100% - 32px);
-            width: calc(100% - 32px); } }
+            width: 280px !important;
+            left: 16px !important;
+            right: auto; } }
+
+@media only screen and (max-width: 390px) {
+    .filter__categoryes-show-sub {
+        left: 93px;
+        width: auto; } }
 
 @media only screen and (max-width: 840px) {
     .filter__country-show {

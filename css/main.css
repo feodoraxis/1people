@@ -1620,7 +1620,9 @@ input {
             background-color: rgba(255, 255, 255, 0.95);
             z-index: 100;
             padding: 21px 1px 27px 0;
-            max-height: 380px; }
+            max-height: 380px;
+            -webkit-box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12); }
             .filter__categoryes-show-main > li {
                 display: -webkit-box;
                 display: -webkit-flex;
@@ -1665,7 +1667,9 @@ input {
             max-height: 380px;
             overflow: hidden;
             overflow-y: auto;
-            z-index: 100; }
+            z-index: 100;
+            -webkit-box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12);
+                    box-shadow: 0 9px 46px rgba(0, 0, 0, 0.12); }
             .filter__categoryes-show-sub-category {
                 right: auto;
                 left: 50px; }

@@ -1009,8 +1009,6 @@ input {
                 color: #FF2525; }
     .single__project-location.active .single__project-location-list {
         display: block; }
-    .single__project-location.active .single__project-location-select::after {
-        display: none; }
 
 .single__project-description p {
     color: #000;
@@ -1705,7 +1703,7 @@ input {
                     border-bottom: 1px solid rgba(29, 25, 140, 0.33);
                     display: inline-block;
                     text-decoration: none;
-                    padding-right: 22px;
+                    padding-right: 7px;
                     position: relative;
                     white-space: nowrap;
                     overflow: hidden;
@@ -1983,8 +1981,13 @@ input {
                 -ms-transform: rotate(-90deg);
                     transform: rotate(-90deg);
             background-image: url(../img/icons/arrow-right-red.svg); }
-    .filter__sort.selected > p {
-        color: #FF2525; }
+    .filter__sort.selected {
+        border-color: #1D198C; }
+        .filter__sort.selected > p {
+            color: #FF2525; }
+        .filter__sort.selected::after {
+            background-image: url(../img/icons/arrow-right-blue.svg);
+            opacity: 1; }
     .filter__sort::after {
         content: '';
         display: block;

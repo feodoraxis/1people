@@ -2329,61 +2329,82 @@ input[type="email"] {
 
 .matrix__item {
     background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    -webkit-background-size: 562px 562px;
+            background-size: 562px;
     height: 90px;
-    background-position-y: 3px; }
-    .matrix__item:hover {
-        background-position-y: 2px; }
+    background-image: url(../img/matrix_sprite.png); }
     .matrix__item-all_projects {
-        background-image: url(../img/nmatrix/all_projects.png); }
+        background-position-x: 0px;
+        background-position-y: 0px; }
         .matrix__item-all_projects:hover {
-            background-image: url(../img/nmatrix/all_projects-hover.png); }
+            background-position-x: 0px;
+            background-position-y: 0px; }
     .matrix__item-participation {
-        background-image: url(../img/nmatrix/participation.png); }
+        background-position-x: -373px;
+        background-position-y: -179px; }
         .matrix__item-participation:hover {
-            background-image: url(../img/nmatrix/participation-hover.png); }
+            background-position-x: -373px;
+            background-position-y: -179px; }
     .matrix__item-comm {
-        background-image: url(../img/nmatrix/comm.png); }
+        background-position-x: -187px;
+        background-position-y: 0px; }
         .matrix__item-comm:hover {
-            background-image: url(../img/nmatrix/comm-hover.png); }
+            background-position-x: -187px;
+            background-position-y: 0px; }
     .matrix__item-people {
-        background-image: url(../img/nmatrix/people.png); }
+        background-position-x: -375px;
+        background-position-y: -267px; }
         .matrix__item-people:hover {
-            background-image: url(../img/nmatrix/people-hover.png); }
+            background-position-x: -375px;
+            background-position-y: -267px; }
     .matrix__item-humans {
-        background-image: url(../img/nmatrix/humans.png); }
+        background-position-x: -185px;
+        background-position-y: -267px; }
         .matrix__item-humans:hover {
-            background-image: url(../img/nmatrix/humans-hover.png); }
+            background-position-x: -185px;
+            background-position-y: -267px; }
     .matrix__item-kids {
-        background-image: url(../img/nmatrix/kids.png); }
+        background-position-x: -374px;
+        background-position-y: 0px; }
         .matrix__item-kids:hover {
-            background-image: url(../img/nmatrix/kids-hover.png); }
+            background-position-x: -374px;
+            background-position-y: 0px; }
     .matrix__item-education {
-        background-image: url(../img/nmatrix/education.png); }
+        background-position-x: -186px;
+        background-position-y: -176px; }
         .matrix__item-education:hover {
-            background-image: url(../img/nmatrix/education-hover.png); }
+            background-position-x: -186px;
+            background-position-y: -176px; }
     .matrix__item-channel {
-        background-image: url(../img/nmatrix/channel.png); }
+        background-position-x: 0px;
+        background-position-y: -86px; }
         .matrix__item-channel:hover {
-            background-image: url(../img/nmatrix/channel-hover.png); }
+            background-position-x: 0px;
+            background-position-y: -86px; }
     .matrix__item-nature {
-        background-image: url(../img/nmatrix/nature.png); }
+        background-position-x: -374px;
+        background-position-y: -87px; }
         .matrix__item-nature:hover {
-            background-image: url(../img/nmatrix/nature-hover.png); }
+            background-position-x: -374px;
+            background-position-y: -87px; }
     .matrix__item-history {
-        background-image: url(../img/nmatrix/history.png); }
+        background-position-x: 0px;
+        background-position-y: -267px; }
         .matrix__item-history:hover {
-            background-image: url(../img/nmatrix/history-hover.png); }
+            background-position-x: 0px;
+            background-position-y: -267px; }
     .matrix__item-culture {
-        background-image: url(../img/nmatrix/culture.png); }
+        background-position-x: 0px;
+        background-position-y: -177px; }
         .matrix__item-culture:hover {
-            background-image: url(../img/nmatrix/culture-hover.png); }
+            background-position-x: 0px;
+            background-position-y: -177px; }
     .matrix__item-creation {
-        background-image: url(../img/nmatrix/creation.png); }
+        background-position-x: -186px;
+        background-position-y: -88px; }
         .matrix__item-creation:hover {
-            background-image: url(../img/nmatrix/creation-hover.png); }
+            background-position-x: -186px;
+            background-position-y: -88px; }
     .matrix__item a {
         display: block;
         width: 100%;

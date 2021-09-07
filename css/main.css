@@ -2325,8 +2325,6 @@ input[type="email"] {
 
 .matrix__item {
     background-repeat: no-repeat;
-    -webkit-background-size: 562px 562px;
-            background-size: 562px;
     height: 90px;
     background-image: url(../img/matrix_sprite.png); }
     .matrix__item-all_projects {

@@ -2338,12 +2338,13 @@ input[type="email"] {
             background-position-x: -5px;
             background-position-y: -370px; }
     .matrix__item-participation {
-        background-position-x: -381px;
+        background-position-x: -382px;
         background-position-y: -184px;
         -webkit-background-size: 575px 575px;
-                background-size: 575px; }
+                background-size: 575px;
+        margin-left: 1px; }
         .matrix__item-participation:hover {
-            background-position-x: -383px;
+            background-position-x: -384px;
             background-position-y: -547px; }
     .matrix__item-comm {
         background-position-x: -185px;
@@ -2388,8 +2389,8 @@ input[type="email"] {
         background-position-y: -178px;
         -webkit-background-size: 568px 568px;
                 background-size: 568px;
-        width: -webkit-calc(100% - 7px);
-        width: calc(100% - 7px); }
+        width: -webkit-calc(100% - 8px);
+        width: calc(100% - 8px); }
         .matrix__item-education:hover {
             background-position-x: -194px;
             background-position-y: -537px; }
@@ -2397,7 +2398,9 @@ input[type="email"] {
         background-position-x: 3px;
         background-position-y: -88px;
         -webkit-background-size: 570px 570px;
-                background-size: 570px; }
+                background-size: 570px;
+        width: -webkit-calc(100% - 2px);
+        width: calc(100% - 2px); }
         .matrix__item-channel:hover {
             background-position-x: 1px;
             background-position-y: -448px; }

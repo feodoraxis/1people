@@ -159,6 +159,7 @@
 
                     <div class="filter-right">
                         <div class="filter-country">
+                            <!-- Новое. Чтобы стрелочка при активации поля ввода тоже уезжала вправо, нужно элементу .filter__country добавить класс .active -->
                             <div class="filter__country">
                                 <input type="text" placeholder="Страна и регион">
                             </div>
@@ -177,82 +178,87 @@
                 <!-- add .active class -->
                 <div class="filter__categoryes-show active">
                     <ul class="filter__categoryes-show-main">
-                        <li class="filter__categoryes-show-society" for="#society">
-                            <span>Общество</span>
-                        </li>
-                        <li class="filter__categoryes-show-people" for="#people">
-                            <span>Люди</span>
-                        </li>
-                        <li class="filter__categoryes-show-kids" for="#kids">
-                            <span>Дети</span>
-                        </li>
-                        <li class="filter__categoryes-show-nature" for="#nature">
-                            <span>Природа</span>
-                        </li>
-                        <li class="filter__categoryes-show-creating" for="#creating">
-                            <span>Творчество</span>
-                        </li>
-                        <li class="filter__categoryes-show-culture" for="#culture">
-                            <span>Культура</span>
-                        </li>
-                        <li class="filter__categoryes-show-history" for="#history">
-                            <span>История</span>
-                        </li>
-                        <li class="filter__categoryes-show-education" for="#education">
-                            <span>Просвещение</span>
-                        </li>
+                        <div class="filter__categoryes-show-main-border">
+                            <li class="filter__categoryes-show-society" for="#society">
+                                <span>Общество</span>
+                            </li>
+                            <li class="filter__categoryes-show-people" for="#people">
+                                <span>Люди</span>
+                            </li>
+                            <li class="filter__categoryes-show-kids" for="#kids">
+                                <span>Дети</span>
+                            </li>
+                            <li class="filter__categoryes-show-nature" for="#nature">
+                                <span>Природа</span>
+                            </li>
+                            <li class="filter__categoryes-show-creating" for="#creating">
+                                <span>Творчество</span>
+                            </li>
+                            <li class="filter__categoryes-show-culture" for="#culture">
+                                <span>Культура</span>
+                            </li>
+                            <li class="filter__categoryes-show-history" for="#history">
+                                <span>История</span>
+                            </li>
+                            <li class="filter__categoryes-show-education" for="#education">
+                                <span>Просвещение</span>
+                            </li>
+                        </div>
                     </ul>
 
                     <!-- add .active class -->
                     <div class="filter__categoryes-show-sub active" id="society">
 
-                        <a class="filter__categoryes-show-sub-back" href="#">< <span>Назад</span></a>
-                        <div class="filter__categoryes-show-sub-list">
-                            <ul>
-                                
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Природа</a></span></li>
-                                <li><span><a href="#">Экология</a></span></li>
-                                <li><span><a href="#">Животные</a></span></li>
-                                <li><span><a href="#">Лес</a></span></li>
-                                <li><span><a href="#">Океан</a></span></li>
-                                <li><span><a href="#">Птицы</a></span></li>
-                            </ul>
+                        <!-- Добавил новое обрамление -->
+                        <div class="filter__categoryes-show-sub-border">
+                            <a class="filter__categoryes-show-sub-back" href="#">< <span>Назад</span></a>
+                            <div class="filter__categoryes-show-sub-list">
+                                <ul>
+                                    
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Природа</a></span></li>
+                                    <li><span><a href="#">Экология</a></span></li>
+                                    <li><span><a href="#">Животные</a></span></li>
+                                    <li><span><a href="#">Лес</a></span></li>
+                                    <li><span><a href="#">Океан</a></span></li>
+                                    <li><span><a href="#">Птицы</a></span></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <!-- <button class="filter__categoryes-show-sub-button"></button> -->
@@ -480,7 +486,9 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/1-test.png" alt="">
+                                    <div class="bg">
+                                        <img src="img/projects/1-test.png" alt="">
+                                    </div>
                                 </div>
                             </div>
 
@@ -514,7 +522,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/2.png" alt="">
+                                    <div class="bg"><img src="img/projects/2.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -548,7 +556,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/3.png" alt="">
+                                    <div class="bg"><img src="img/projects/3.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -582,7 +590,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/1.png" alt="">
+                                    <div class="bg"><img src="img/projects/1.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -616,7 +624,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/2.png" alt="">
+                                    <div class="bg"><img src="img/projects/2.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -650,7 +658,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/3.png" alt="">
+                                    <div class="bg"><img src="img/projects/3.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -684,7 +692,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/1.png" alt="">
+                                    <div class="bg"><img src="img/projects/1.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -718,7 +726,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/2.png" alt="">
+                                    <div class="bg"><img src="img/projects/2.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -752,7 +760,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/3.png" alt="">
+                                    <div class="bg"><img src="img/projects/3.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -786,7 +794,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/1.png" alt="">
+                                    <div class="bg"><img src="img/projects/1.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -820,7 +828,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/2.png" alt="">
+                                    <div class="bg"><img src="img/projects/2.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -854,7 +862,7 @@
                             </div>
                             <div class="project__item-thumbnail">
                                 <div class="item__thumbnail">
-                                    <img src="img/projects/3.png" alt="">
+                                    <div class="bg"><img src="img/projects/3.png" alt=""></div>
                                 </div>
                             </div>
 

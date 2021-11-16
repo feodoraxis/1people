@@ -992,8 +992,6 @@
             -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
         max-width: 100%; }
-    .support-error {
-        margin-top: -10px; }
     .support-transfer {
         padding-top: 0px;
         padding-bottom: 0px; }
@@ -1017,7 +1015,11 @@
 
 @media only screen and (max-width: 470px) {
     .support-participation {
-        margin-bottom: 6px; } }
+        margin-bottom: 6px; }
+    .support-error {
+        margin-top: -8px; }
+        .support-error p {
+            font-size: 12px; } }
 
 @media only screen and (max-width: 440px) {
     .support-head {
@@ -1071,8 +1073,6 @@
         margin-left: 0; }
     .support-button > div:first-child {
         margin-bottom: 4px; }
-    .support-error p {
-        font-size: 12px; }
     .support-user_data .support-error {
         margin-top: 2px; }
     .support-flexbox-price .support-error {

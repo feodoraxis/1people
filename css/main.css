@@ -2507,7 +2507,7 @@ input {
     left: 276px;
     top: 50px;
     border: 0.3px solid rgba(255, 255, 255, 0.88);
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 .filter__country-show::before {
     content: "";
@@ -2528,6 +2528,8 @@ input {
     padding-left: 0;
     padding-top: 5px;
     list-style-type: none;
+    overflow-y: auto;
+    max-height: 207px;
 }
 .filter__country-show ul li {
     line-height: 28px;

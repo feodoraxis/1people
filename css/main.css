@@ -2548,6 +2548,9 @@ input {
 .filter__country-show ul li.first {
     border-top: 0.5px solid #ff2525;
 }
+.filter__country-show ul li:hover {
+    color: #ff2525;
+}
 .filter__country-show ul li:first-child {
     border-top: 0;
     margin-top: 0;

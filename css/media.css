@@ -1639,11 +1639,13 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .filter__categoryes-show-sub-border {
+        padding-top: 14px;
+    }
     .filter__categoryes-show-sub-back {
         display: block;
-        position: absolute;
-        left: 20px;
-        top: 15px;
+        position: relative;
+        margin-left: -13px;
         font-size: 14px;
         font-family: "Vera Humana 95", sans-serif;
         color: #1d198c;
@@ -1684,7 +1686,7 @@
         overflow-y: scroll;
     }
     .filter__categoryes-show-sub-border {
-        padding: 37px 16px 18px;
+        padding: 18px 16px 18px;
     }
     .filter__categoryes-show-sub-category {
         left: 16px;
@@ -1693,6 +1695,9 @@
     }
     .filter__categoryes-show-sub-category button {
         display: none;
+    }
+    .filter__categoryes-show-sub-back {
+        margin-left: 0;
     }
     .filter__categoryes-show-sub ul {
         z-index: 3;
